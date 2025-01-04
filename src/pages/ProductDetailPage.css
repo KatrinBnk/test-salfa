@@ -1,0 +1,58 @@
+.detail-page {
+    padding: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.detail-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-content img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.detail-info {
+    max-width: 600px;
+}
+
+.detail-info h2 {
+    margin-bottom: 10px;
+}
+
+.detail-info p {
+    margin: 5px 0;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
