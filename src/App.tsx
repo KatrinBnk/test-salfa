@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }, [dispatch]);
 
     return (
-        <Router>
+        <Router basename="/test-salfa">
             <Routes>
                 <Route path="/" element={<Navigate to="/products" />} />
                 <Route path="/products" element={<ProductsPage />} />
