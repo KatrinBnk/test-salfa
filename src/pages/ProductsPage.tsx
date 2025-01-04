@@ -3,8 +3,8 @@ import { useAppSelector, useAppDispatch } from '../store/hooks';
 import { toggleLike, deleteBook } from '../store/slices/booksSlice';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaRegHeart, FaTrash } from 'react-icons/fa';
-import ReactPaginate from 'react-paginate'; //NOTE: для пагинации
-import './ProductsPage.css';
+import ReactPaginate from 'react-paginate';
+import './ProductsPage.css'
 
 const ProductsPage: React.FC = () => {
     const books = useAppSelector(state => state.books.items);
