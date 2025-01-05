@@ -37,11 +37,11 @@ const App: React.FC = () => {
     return (
         <Router basename="/test-salfa">
             <Routes>
-                <Route path="/test-salfa/" element={<Navigate to="/test-salfa/products" />} />
-                <Route path="/test-salfa/products" element={<ProductsPage />} />
-                <Route path="/test-salfa/products/:id" element={<ProductDetailPage />} />
-                <Route path="/test-salfa/create-product" element={<CreateProductPage />} />
-                <Route path="/test-salfa/edit-product/:id" element={<EditProductPage />} /> {/* NOTE: Для бонуса (редактирование продукта)*/}
+                <Route path="/" element={<Navigate to="/products" />} />
+                <Route path="/products" element={<ProductsPage />} />
+                <Route path="/products/:id" element={<ProductDetailPage />} />
+                <Route path="/create-product" element={<CreateProductPage />} />
+                <Route path="/edit-product/:id" element={<EditProductPage />} /> {/* NOTE: Для бонуса (редактирование продукта)*/}
             </Routes>
         </Router>
     );
