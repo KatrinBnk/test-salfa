@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import CreateProductPage from './pages/CreateProductPage';
@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }, [dispatch]);
 
     return (
-        <Router basename="/test-salfa">
+        <HashRouter basename="/test-salfa">
             <Routes>
                 <Route path="/" element={<Navigate to="/products" />} />
                 <Route path="/products" element={<ProductsPage />} />
@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 <Route path="/create-product" element={<CreateProductPage />} />
                 <Route path="/edit-product/:id" element={<EditProductPage />} /> {/* NOTE: Для бонуса (редактирование продукта)*/}
             </Routes>
-        </Router>
+        </HashRouter>
     );
 };
 
