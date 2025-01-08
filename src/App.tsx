@@ -35,7 +35,7 @@ const App: React.FC = () => {
     }, [dispatch]);
 
     return (
-        <HashRouter basename="/test-salfa">
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Navigate to="/products" />} />
                 <Route path="/products" element={<ProductsPage />} />
